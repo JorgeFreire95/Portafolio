@@ -41,7 +41,7 @@ const Projects = () => {
                                         <span key={index} className="tag">{tag}</span>
                                     ))}
                                 </div>
-                                <a href={"https://github.com/JorgeFreire95/Rep-Drill"} className="btn-link">Ver Proyecto &rarr;</a>
+                                <a href={"https://github.com/JorgeFreire95"} className="btn-link">Ver Proyecto &rarr;</a>
                             </div>
                         </div>
                     ))}
