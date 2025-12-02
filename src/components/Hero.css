@@ -1,0 +1,166 @@
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding-top: 80px;
+    /* Navbar height */
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 4rem;
+    position: relative;
+    z-index: 1;
+}
+
+.greeting {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.name {
+    font-size: 5rem;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+    background: linear-gradient(to right, #fff, #ccc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.role {
+    font-size: 2rem;
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+}
+
+.description {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    max-width: 500px;
+    margin-bottom: 2.5rem;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-outline {
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--text-color);
+}
+
+.btn-outline:hover {
+    background: rgba(139, 92, 246, 0.1);
+}
+
+.hero-visual {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.gradient-blob {
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.4;
+    animation: pulse 6s infinite alternate;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.8);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .name {
+        font-size: 4rem;
+    }
+
+    .role {
+        font-size: 1.8rem;
+    }
+
+    .gradient-blob {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding-top: 100px;
+        text-align: center;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .hero-text {
+        order: 2;
+        /* Visual below text on mobile if desired, or keep default */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-visual {
+        order: 1;
+        margin-bottom: 2rem;
+    }
+
+    .name {
+        font-size: 3rem;
+    }
+
+    .role {
+        font-size: 1.5rem;
+    }
+
+    .description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .gradient-blob {
+        width: 250px;
+        height: 250px;
+        filter: blur(60px);
+    }
+}
