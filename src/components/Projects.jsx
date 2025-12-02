@@ -8,21 +8,21 @@ const Projects = () => {
             title: "Rep-Drill",
             description: "Panel de administración completo con gráficos y gestión de inventario.",
             tags: ["React", "Django", "PostgreSQL", "Prophet", "Docker", "Ollama"],
-            link: "#"
+            link: "https://github.com/JorgeFreire95/rep-drill"
         },
         {
             id: 2,
             title: "App de Clima",
             description: "Aplicación de pronóstico del tiempo en tiempo real con geolocalización.",
             tags: ["React", "API", "CSS"],
-            link: "#"
+            link: "https://github.com/JorgeFreire95/app-clima"
         },
         {
             id: 3,
             title: "Task Manager",
             description: "Organizador de tareas con funcionalidad drag-and-drop.",
             tags: ["React", "Firebase", "DnD"],
-            link: "#"
+            link: "https://github.com/JorgeFreire95/task-manager"
         }
     ];
 
@@ -41,7 +41,7 @@ const Projects = () => {
                                         <span key={index} className="tag">{tag}</span>
                                     ))}
                                 </div>
-                                <a href={"https://github.com/JorgeFreire95"} className="btn-link">Ver Proyecto &rarr;</a>
+                                <a href={project.link} className="btn-link" target="_blank" rel="noopener noreferrer">Ver Proyecto &rarr;</a>
                             </div>
                         </div>
                     ))}
