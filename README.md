@@ -87,5 +87,4 @@ Si deseas clonar y correr este proyecto localmente:
     ```
     Abre [http://localhost:5173](http://localhost:5173) en tu navegador.
 
-## 📄 Licencia
-Este proyecto es de uso libre para fines educativos y personales.
+https://jorgefreire95.github.io/Portafolio/
