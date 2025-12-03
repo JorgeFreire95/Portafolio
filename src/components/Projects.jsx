@@ -15,14 +15,14 @@ const Projects = () => {
             title: "App de Clima",
             description: "Aplicación de pronóstico del tiempo en tiempo real con geolocalización.",
             tags: ["React", "API", "CSS"],
-            link: "https://github.com/JorgeFreire95/app-clima"
+            link: "#"
         },
         {
             id: 3,
             title: "Task Manager",
             description: "Organizador de tareas con funcionalidad drag-and-drop.",
             tags: ["React", "Firebase", "DnD"],
-            link: "https://github.com/JorgeFreire95/task-manager"
+            link: "#"
         }
     ];
 
