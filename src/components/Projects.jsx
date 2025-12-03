@@ -22,7 +22,7 @@ const Projects = () => {
             title: "Task Manager",
             description: "Organizador de tareas con funcionalidad drag-and-drop.",
             tags: ["React", "Firebase", "DnD"],
-            link: "#"
+            link: "#g"
         }
     ];
 
