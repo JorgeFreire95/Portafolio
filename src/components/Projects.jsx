@@ -15,7 +15,7 @@ const Projects = () => {
             title: "App de Clima",
             description: "Aplicación de pronóstico del tiempo en tiempo real con geolocalización.",
             tags: ["React", "API", "CSS"],
-            link: "#"
+            link: "https://github.com/JorgeFreire95/Portafolio"
         },
         {
             id: 3,
