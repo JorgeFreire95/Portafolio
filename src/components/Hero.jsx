@@ -20,7 +20,7 @@ const Hero = () => {
                 <div className="hero-visual">
                     <div className="image-container">
                         <img
-                            src="https://ui-avatars.com/api/?name=Jorge+Freire&background=8b5cf6&color=fff&size=400"
+                            src="/perfil.jpg"
                             alt="Jorge Freire"
                             className="hero-image"
                         />
