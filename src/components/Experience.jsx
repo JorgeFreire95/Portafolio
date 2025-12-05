@@ -5,24 +5,10 @@ const Experience = () => {
     const experiences = [
         {
             id: 1,
-            role: 'Desarrollador Frontend',
-            company: 'Tech Solutions Inc.',
-            period: '2022 - Presente',
-            description: 'Lideré el desarrollo de interfaces de usuario modernas utilizando React y Tailwind CSS. Mejoré el rendimiento del sitio web en un 40% y colaboré estrechamente con diseñadores UX/UI.',
-        },
-        {
-            id: 2,
-            role: 'Desarrollador Web Junior',
-            company: 'Creative Agency',
-            period: '2020 - 2022',
-            description: 'Desarrollé sitios web responsivos para diversos clientes. Mantenimiento y actualización de plataformas existentes utilizando HTML, CSS y JavaScript.',
-        },
-        {
-            id: 3,
-            role: 'Pasante de Desarrollo',
-            company: 'StartUp Innovadora',
-            period: '2019 - 2020',
-            description: 'Apoyo en la creación de componentes reutilizables y pruebas unitarias. Aprendizaje continuo de nuevas tecnologías y metodologías ágiles.',
+            role: 'Desarrollador Backend',
+            company: 'Crazy Family',
+            period: '2025',
+            description: 'Cree varias funacionalidades el sitio web, tales como sincronización de los precios de los productos y del stock de productos, utilizando lenguje php junto con wordpress elojado en un Hosting',
         }
     ];
 

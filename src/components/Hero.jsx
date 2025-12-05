@@ -20,7 +20,7 @@ const Hero = () => {
                 <div className="hero-visual">
                     <div className="image-container">
                         <img
-                            src="/perfil.jpg"
+                            src="perfil.png"
                             alt="Jorge Freire"
                             className="hero-image"
                         />
