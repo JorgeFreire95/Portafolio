@@ -18,7 +18,14 @@ const Hero = () => {
                     </div>
                 </div>
                 <div className="hero-visual">
-                    <div className="gradient-blob"></div>
+                    <div className="image-container">
+                        <img
+                            src="https://ui-avatars.com/api/?name=Jorge+Freire&background=8b5cf6&color=fff&size=400"
+                            alt="Jorge Freire"
+                            className="hero-image"
+                        />
+                        <div className="gradient-blob-behind"></div>
+                    </div>
                 </div>
             </div>
         </section>
