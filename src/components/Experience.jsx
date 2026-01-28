@@ -8,7 +8,7 @@ const Experience = () => {
             role: 'Desarrollador Backend',
             company: 'Crazy Family',
             period: '2025',
-            description: 'Cree varias funacionalidades el sitio web, tales como sincronización de los precios de los productos y del stock de productos, utilizando lenguje php junto con wordpress elojado en un Hosting',
+            description: 'Se trabajo principalmente en la optimizacion y mantencion del backend del sitio web e implementando funcionalidades segun requerimiento del cliente ',
         }
     ];
 
