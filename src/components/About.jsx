@@ -10,7 +10,7 @@ const About = () => {
                     <div className="about-text">
                         <p>
                             Soy un apasionado desarrollador web con experiencia en la creación de aplicaciones modernas y escalables.
-                            Me especializo tanto en el área de FrontEnd como en BackEnd y siempre estoy buscando aprender nuevas tecnologías.
+                            Me especializo tanto en el área de FrontEnd como en el de BackEnd y siempre estoy buscando aprender nuevas tecnologías.
                         </p>
                         <p>
                             Mi enfoque es escribir código limpio, eficiente y mantenible, mientras creo interfaces de usuario intuitivas y atractivas.
