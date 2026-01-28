@@ -6,7 +6,7 @@ const Projects = () => {
         {
             id: 1,
             title: "Rep-Drill",
-            description: "Panel de administración completo con gráficos y gestión de inventario.",
+            description: "En conjunto con mi equipo de trabajo, se desarrollo un software para la gestión de inventario y ventas de una empresa de repuestos. La cual consta con sistema de modelos predictivos para la gestión de inventario y un chatbot para la atención al cliente.",
             tags: ["React", "Django", "PostgreSQL", "Prophet", "Docker", "Ollama"],
             link: "https://github.com/JorgeFreire95/rep-drill"
         },
