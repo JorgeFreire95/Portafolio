@@ -8,7 +8,7 @@ const Footer = () => {
                 <p>&copy; {new Date().getFullYear()} Jorge. Todos los derechos reservados.</p>
                 <div className="social-links">
                     <a href="https://github.com/JorgeFreire95" aria-label="GitHub">GitHub</a>
-                    <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                    <a href="https://www.linkedin.com/in/jorge-freire-ab6154360/" aria-label="LinkedIn">LinkedIn</a>
                     <a href="#" aria-label="Twitter">Twitter</a>
                 </div>
             </div>
