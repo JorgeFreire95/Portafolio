@@ -10,6 +10,13 @@ const Projects = () => {
             tags: ["React", "Django", "PostgreSQL", "Prophet", "Docker", "Ollama"],
             link: "https://github.com/JorgeFreire95/rep-drill"
         },
+         {
+            id: 2,
+            title: "RifaFacil",
+            description: "Desarrollé una aplicacion movil para gestionar rifas de manera sencilla y eficiente. La aplicación permite a los usuarios crear, administrar y participar en rifas, facilitando la organización y el seguimiento de los eventos.",
+            tags: ["React", "Capacitor", "FireBase", "Glassmorphism", "JavaScript"],
+            link: "https://github.com/JorgeFreire95/RifaFacil"
+        },
        
     ];
 
