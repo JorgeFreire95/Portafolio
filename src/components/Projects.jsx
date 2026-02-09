@@ -26,9 +26,18 @@ const Projects = () => {
             description: "Desarrollé una aplicacion movil para gestionar rifas de manera sencilla y eficiente. La aplicación permite a los usuarios crear, administrar y participar en rifas, facilitando la organización y el seguimiento de los eventos.",
             tags: ["React", "Capacitor", "FireBase", "Glassmorphism", "JavaScript"],
             link: "https://github.com/JorgeFreire95/RifaFacil",
-            images: [rifafacil1, rifafacil2, rifafacil3],
-            initialImageCount: 3
+            images: [],
+            initialImageCount: 0
         },
+        {
+            id: 3,
+            title: "Iglesia Prebiteriana de Villa Alemana (en desarrollo)",
+            description: "Desarrollé un sitio web para la Iglesia Presbiteriana de Villa Alemana, con el objetivo de proporcionar una plataforma en línea para que los miembros de la iglesia puedan acceder a información sobre eventos, servicios y actividades. El sitio web cuenta con un diseño moderno y fácil de navegar, permitiendo a los usuarios mantenerse conectados con la comunidad de la iglesia.",
+            tags: ["React", "Python", "SQLite", "Django"],
+            link: "https://github.com/JorgeFreire95/JVL",
+            images: [],
+            initialImageCount: 3
+        }
        
     ]);
 

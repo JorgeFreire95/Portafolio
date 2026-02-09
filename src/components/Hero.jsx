@@ -1,5 +1,6 @@
 import React from 'react';
 import './Hero.css';
+import perfilImg from '../assets/perfil.jpg';
 
 const Hero = () => {
     return (
@@ -20,7 +21,7 @@ const Hero = () => {
                 <div className="hero-visual">
                     <div className="image-container">
                         <img
-                            src="perfil.jpg"
+                            src={perfilImg}
                             alt="Jorge Freire"
                             className="hero-image"
                         />
