@@ -8,7 +8,7 @@ const Experience = () => {
             role: 'Desarrollador Backend',
             company: 'Crazy Family',
             period: '2025',
-            description: 'Se trabajo principalmente en la optimizacion y mantencion del backend del sitio web e implementando funcionalidades segun requerimiento del cliente ',
+            description: 'Desarrollo de servicios backend en Node.js y Express para sincronización de stock y precios. Implementación de procesos de carga masiva de productos, reduciendo en un 40% los tiempos operativos. Validación y control de datos para asegurar la integridad y consistencia de la información. Trabajo con APIs REST y bases de datos relacionales',
         }
     ];
 

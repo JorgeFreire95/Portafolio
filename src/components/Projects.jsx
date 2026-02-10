@@ -11,8 +11,8 @@ const STATIC_PROJECTS = [
     {
         id: 1,
         title: "Rep-Drill",
-        description: "En conjunto con mi equipo de trabajo, se desarrollo un software para la gestión de inventario y ventas de una empresa de repuestos. La cual consta con sistema de modelos predictivos para la gestión de inventario y un chatbot para la atención al cliente.",
-        tags: ["React", "Django", "PostgreSQL", "Prophet", "Docker", "Ollama"],
+        description: "Proyecto Full Stack | Trabajo en equipo - Desarrollo de un sistema para la gestión de inventario y ventas de una empresa de repuestos. Implementación de modelos predictivos para optimizar la gestión de stock y apoyar la toma de decisiones. Integración de un chatbot para atención al cliente, mejorando la experiencia de usuario. Desarrollo colaborativo utilizando React.js, TypeScript y Node.js, con consumo de APIs REST.",
+        tags: ["React", "Python", "PostgreSQL", "Prophet", "Docker", "Ollama"],
         link: "https://github.com/JorgeFreire95/rep-drill",
         images: [rep1, rep2],
         layout: "horizontal",
@@ -21,7 +21,7 @@ const STATIC_PROJECTS = [
     {
         id: 2,
         title: "RifaFacil",
-        description: "Desarrollé una aplicacion movil para gestionar rifas de manera sencilla y eficiente. La aplicación permite a los usuarios crear, administrar y participar en rifas, facilitando la organización y el seguimiento de los eventos.",
+        description: "Proyecto Mobile / Full Stack - Diseño y desarrollo de una aplicación móvil para crear, administrar y participar en rifas. Implementación de funcionalidades para el seguimiento y control de eventos. Enfoque en usabilidad, flujo de usuario y manejo eficiente de datos.",
         tags: ["React", "Capacitor", "FireBase", "Glassmorphism", "JavaScript"],
         link: "https://github.com/JorgeFreire95/RifaFacil",
         images: [rifafacil1, rifafacil2, rifafacil3],

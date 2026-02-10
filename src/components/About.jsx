@@ -9,19 +9,28 @@ const About = () => {
                 <div className="about-content glass">
                     <div className="about-text">
                         <p>
-                            Soy un apasionado desarrollador web con experiencia en la creación de aplicaciones modernas y escalables.
-                            Soy desarrollador FullStack y siempre estoy buscando aprender nuevas tecnologías.
+                            Desarrollador Full Stack con formación en Ingeniería en Informática y experiencia en proyectos reales de gestión de inventarios, 
+                            ventas y aplicaciones móviles. Especializado en React.js y TypeScript, 
+                            con experiencia en Node.js, APIs REST y bases de datos relacionales. 
+                            Me destaco por mi enfoque en resultados, trabajo en equipo y capacidad para desarrollar soluciones escalables orientadas a negocio.
                         </p>
-                        <p>
-                            Mi enfoque es escribir código limpio, eficiente y mantenible, mientras creo interfaces de usuario intuitivas y atractivas.
-                        </p>
+                        
                         <div className="skills-grid">
-                            <div className="skill-item">React</div>
-                            <div className="skill-item">JavaScript</div>
+                            <div className="skill-item">React.js</div>
+                            <div className="skill-item">TypeScript</div>
+                            <div className="skill-item">JavaScript(ES6+)</div>
                             <div className="skill-item">Node.js</div>
-                            <div className="skill-item">CSS3</div>
+                            <div className="skill-item">Express.js</div>
+                            <div className="skill-item">APIs REST</div>
+                            <div className="skill-item">PostgreSQL</div>
+                            <div className="skill-item">MySQL</div>
+                            <div className="skill-item">Oracle Database</div>
                             <div className="skill-item">HTML5</div>
+                            <div className="skill-item">CSS3</div>
+                            <div className="skill-item">Tailwind CSS</div>
                             <div className="skill-item">Git</div>
+                            <div className="skill-item">GitHub</div>
+                            <div className="skill-item">Docker</div>
                         </div>
                     </div>
                 </div>

@@ -16,6 +16,7 @@ const Hero = () => {
                     <div className="hero-buttons">
                         <a href="#projects" className="btn btn-primary">Ver Proyectos</a>
                         <a href="#contact" className="btn btn-outline">Contáctame</a>
+                        <a href="/Jorge Freire CV.pdf" className="btn btn-outline" download>Descargar Curriculum</a>
                     </div>
                 </div>
                 <div className="hero-visual">
