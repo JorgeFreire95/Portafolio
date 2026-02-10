@@ -3,43 +3,46 @@ import './Projects.css';
 import rifafacil1 from '../assets/rifafacil/img1.png';
 import rifafacil2 from '../assets/rifafacil/img2.png';
 import rifafacil3 from '../assets/rifafacil/img3.png';
+import rep1 from '../assets/rep-drill/rep1.png';
+import rep2 from '../assets/rep-drill/rep2.png';
+import jvl1 from '../assets/jvl/jvl1.png';
+
+const STATIC_PROJECTS = [
+    {
+        id: 1,
+        title: "Rep-Drill",
+        description: "En conjunto con mi equipo de trabajo, se desarrollo un software para la gestión de inventario y ventas de una empresa de repuestos. La cual consta con sistema de modelos predictivos para la gestión de inventario y un chatbot para la atención al cliente.",
+        tags: ["React", "Django", "PostgreSQL", "Prophet", "Docker", "Ollama"],
+        link: "https://github.com/JorgeFreire95/rep-drill",
+        images: [rep1, rep2],
+        layout: "horizontal",
+        initialImageCount: 0
+    },
+    {
+        id: 2,
+        title: "RifaFacil",
+        description: "Desarrollé una aplicacion movil para gestionar rifas de manera sencilla y eficiente. La aplicación permite a los usuarios crear, administrar y participar en rifas, facilitando la organización y el seguimiento de los eventos.",
+        tags: ["React", "Capacitor", "FireBase", "Glassmorphism", "JavaScript"],
+        link: "https://github.com/JorgeFreire95/RifaFacil",
+        images: [rifafacil1, rifafacil2, rifafacil3],
+        layout: "vertical",
+        initialImageCount: 0
+    },
+    {
+        id: 3,
+        title: "Iglesia Prebiteriana de Villa Alemana (en desarrollo)",
+        description: "Desarrollé un sitio web para la Iglesia Presbiteriana de Villa Alemana, con el objetivo de proporcionar una plataforma en línea para que los miembros de la iglesia puedan acceder a información sobre eventos, servicios y actividades. El sitio web cuenta con un diseño moderno y fácil de navegar, permitiendo a los usuarios mantenerse conectados con la comunidad de la iglesia.",
+        tags: ["React", "Python", "SQLite", "Django"],
+        link: "https://github.com/JorgeFreire95/JVL",
+        images: [jvl1],
+        layout: "single",
+        initialImageCount: 1
+    }
+];
 
 const Projects = () => {
-    const [projects, setProjects] = useState([
-        {
-            id: 1,
-            title: "Rep-Drill",
-            description: "En conjunto con mi equipo de trabajo, se desarrollo un software para la gestión de inventario y ventas de una empresa de repuestos. La cual consta con sistema de modelos predictivos para la gestión de inventario y un chatbot para la atención al cliente.",
-            tags: ["React", "Django", "PostgreSQL", "Prophet", "Docker", "Ollama"],
-            link: "https://github.com/JorgeFreire95/rep-drill",
-            // Añade aquí las URLs de tus imágenes. Pueden ser URLs completas (http...) o rutas locales (./assets/...)
-            images: [
-                // "https://ejemplo.com/imagen1.jpg",
-                // "https://ejemplo.com/imagen2.jpg",
-                // "https://ejemplo.com/imagen3.jpg"
-            ],
-            initialImageCount: 0
-        },
-         {
-            id: 2,
-            title: "RifaFacil",
-            description: "Desarrollé una aplicacion movil para gestionar rifas de manera sencilla y eficiente. La aplicación permite a los usuarios crear, administrar y participar en rifas, facilitando la organización y el seguimiento de los eventos.",
-            tags: ["React", "Capacitor", "FireBase", "Glassmorphism", "JavaScript"],
-            link: "https://github.com/JorgeFreire95/RifaFacil",
-            images: [rifafacil1, rifafacil2, rifafacil3],
-            initialImageCount: 0
-        },
-        {
-            id: 3,
-            title: "Iglesia Prebiteriana de Villa Alemana (en desarrollo)",
-            description: "Desarrollé un sitio web para la Iglesia Presbiteriana de Villa Alemana, con el objetivo de proporcionar una plataforma en línea para que los miembros de la iglesia puedan acceder a información sobre eventos, servicios y actividades. El sitio web cuenta con un diseño moderno y fácil de navegar, permitiendo a los usuarios mantenerse conectados con la comunidad de la iglesia.",
-            tags: ["React", "Python", "SQLite", "Django"],
-            link: "https://github.com/JorgeFreire95/JVL",
-            images: [],
-            initialImageCount: 3
-        }
-       
-    ]);
+    // Inicializar estado con los datos estáticos para asegurar que HMR actualice los cambios
+    const [projects, setProjects] = useState(STATIC_PROJECTS);
 
     const [flipped, setFlipped] = useState({});
 
@@ -61,7 +64,7 @@ const Projects = () => {
                             ...project.images.slice(0, 2),
                             ...files.map(file => URL.createObjectURL(file))
                         ].slice(0, 3)
-                      }
+                    }
                     : project
             )
         );
@@ -89,7 +92,7 @@ const Projects = () => {
                 <div className="projects-grid">
                     {projects.map((project) => (
                         <div key={project.id} className="project-card-container">
-                            <div 
+                            <div
                                 className={`project-card-flip ${flipped[project.id] ? 'flipped' : ''}`}
                                 onClick={() => toggleFlip(project.id)}
                             >
@@ -111,28 +114,18 @@ const Projects = () => {
                                 {/* REVERSO */}
                                 <div className="project-card-back glass">
                                     <div className="project-back-content">
-                                        <h3 className="project-title">Galería de Imágenes</h3>
-                                        <div className="images-grid">
-                                            {project.images.map((image, index) => {
-                                                const isRemovable = index >= (project.initialImageCount || 0);
-                                                return (
-                                                    <div key={index} className="image-card">
-                                                        <img src={image} alt={`Proyecto ${index + 1}`} />
-                                                        {isRemovable && (
-                                                            <button
-                                                                className="remove-image-btn"
-                                                                onClick={(e) => {
-                                                                    e.stopPropagation();
-                                                                    removeImage(project.id, index);
-                                                                }}
-                                                            >
-                                                                ✕
-                                                            </button>
-                                                        )}
-                                                    </div>
-                                                );
-                                            })}
-                                            {[...Array(3 - project.images.length)].map((_, index) => (
+
+                                        <div className={`images-grid layout-${project.layout || 'vertical'}`}>
+                                            {project.images.map((image, index) => (
+                                                <div key={index} className="image-card">
+                                                    <img
+                                                        src={image}
+                                                        alt={`Proyecto ${index + 1}`}
+                                                        style={{ objectFit: project.imageFit || 'cover' }}
+                                                    />
+                                                </div>
+                                            ))}
+                                            {!['horizontal', 'single'].includes(project.layout) && [...Array(3 - project.images.length)].map((_, index) => (
                                                 <label key={`empty-${index}`} className="image-placeholder">
                                                     <input
                                                         type="file"
