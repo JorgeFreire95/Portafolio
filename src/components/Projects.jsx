@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import './Projects.css';
 import rifafacil1 from '../assets/rifafacil/img1.png';
-import rifafacil2 from '../assets/rifafacil/img2.png';
 import rifafacil3 from '../assets/rifafacil/img3.png';
 import rep1 from '../assets/rep-drill/rep1.png';
 import rep2 from '../assets/rep-drill/rep2.png';
-import jvl1 from '../assets/jvl/jvl1.png';
 
+import jvl1 from '../assets/jvl/jvl1.png';
+import pok1 from '../assets/pokedex/pok1.png';
+import pok2 from '../assets/pokedex/pok2.png';
 const STATIC_PROJECTS = [
     {
         id: 1,
@@ -24,7 +25,7 @@ const STATIC_PROJECTS = [
         description: "Proyecto Mobile / Full Stack - Diseño y desarrollo de una aplicación móvil para crear, administrar y participar en rifas. Implementación de funcionalidades para el seguimiento y control de eventos. Enfoque en usabilidad, flujo de usuario y manejo eficiente de datos.",
         tags: ["React", "Capacitor", "FireBase", "Glassmorphism", "JavaScript"],
         link: "https://github.com/JorgeFreire95/RifaFacil",
-        images: [rifafacil1, rifafacil2, rifafacil3],
+        images: [rifafacil1, rifafacil3],
         layout: "vertical",
         initialImageCount: 0
     },
@@ -35,14 +36,29 @@ const STATIC_PROJECTS = [
         tags: ["React", "Python", "SQLite", "Django"],
         link: "https://github.com/JorgeFreire95/JVL",
         images: [jvl1],
-        layout: "single",
+        layout: "horizontal",
         initialImageCount: 1
+    },
+    {
+        id: 4,
+        title: "Pokedex",
+        description: "Desarrollo de una aplicación móvil inspirada en una Pokédex digital, permitiendo a los usuarios explorar información detallada de distintos Pokémon. Integración con API pública (PokeAPI) para obtener datos dinámicos como estadísticas, tipos, habilidades e imágenes. Implementación de funcionalidades de búsqueda, filtrado por tipo y vista detallada de cada Pokémon. Enfoque en diseño responsivo, experiencia de usuario y manejo eficiente del consumo de APIs. Aplicación desarrollada aplicando buenas prácticas de estructura de componentes y organización del código.",
+        tags: ["React", "JavaScript"],
+        link: "https://github.com/JorgeFreire95/Pokedex",
+        images: [pok1, pok2],
+        layout: "vertical",
+        initialImageCount: 0
     }
 ];
 
 const Projects = () => {
     // Inicializar estado con los datos estáticos para asegurar que HMR actualice los cambios
     const [projects, setProjects] = useState(STATIC_PROJECTS);
+
+    // Sync state with STATIC_PROJECTS on mount/update (for HMR)
+    React.useEffect(() => {
+        setProjects(STATIC_PROJECTS);
+    }, []);
 
     const [flipped, setFlipped] = useState({});
 
@@ -125,7 +141,8 @@ const Projects = () => {
                                                     />
                                                 </div>
                                             ))}
-                                            {!['horizontal', 'single'].includes(project.layout) && [...Array(3 - project.images.length)].map((_, index) => (
+                                            {/* Only show placeholder if layout allows (not horizontal/single) AND if vertical layout has < 2 images (to avoid 3rd item wrapping) */}
+                                            {!['horizontal', 'single'].includes(project.layout) && (project.layout !== 'vertical' || project.images.length < 2) && [...Array(3 - project.images.length)].map((_, index) => (
                                                 <label key={`empty-${index}`} className="image-placeholder">
                                                     <input
                                                         type="file"
