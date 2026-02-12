@@ -165,9 +165,9 @@
 }
 
 /* Hide the middle image (slot 2) only in vertical layout */
-.images-grid.layout-vertical>*:nth-child(2) {
+/* .images-grid.layout-vertical>*:nth-child(2) {
     display: none;
-}
+} */
 
 /* Horizontal Layout (Top/Bottom split) - Used for Rep-Drill */
 .images-grid.layout-horizontal {
