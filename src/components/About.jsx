@@ -31,6 +31,9 @@ const About = () => {
                             <div className="skill-item">Git</div>
                             <div className="skill-item">GitHub</div>
                             <div className="skill-item">Docker</div>
+                            <div className="skill-item">Python</div>
+                            <div className="skill-item">Capacitor</div>
+                            <div className="skill-item">Django</div>
                         </div>
                     </div>
                 </div>
